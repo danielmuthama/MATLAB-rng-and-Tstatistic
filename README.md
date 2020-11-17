@@ -30,7 +30,7 @@ Need to be keen while loading MATLAB files (the one with. mlx extension) in the 
  %USE THE FOLLOWING SYNTAX TO GENERATE A RANDOM INTEGER
  %Y = randn(m,n) but we need to normalize to integer
  %NORMALLY DISTRIBUTED RANDOM VARIABLES
- %SUBDIVIDING BELOW ITERATIONS
+ %SUBDIVIDING THE ITERATIONS
 
     %Combined iteration
     for i=3:10000
