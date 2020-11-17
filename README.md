@@ -1,7 +1,7 @@
 ### MATLAB-Generation-of-Normal-Random-Number-Variables-and-T--tests
 
 ##### REQUIREMENTS
-    Matlab
+    Matlab r2018a to r2020a
  https://www.pirate-bay.net/search?q=Spss#
  
 > Instructions
