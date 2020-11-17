@@ -72,30 +72,25 @@ rng(470021907)
     %unNORMALIZED OUTPUT DATA
     Y = randn(9,1)
     [barheights, positions]=hist(Y,10);
-
+    
+    
     dx=positions(2)-positions(1);
-
-
     bar(positions, barheights/(dx));
     [barheights, positions]=hist(Y1,10);
 
     dx=positions(2)-positions(1);
-
     bar(positions, barheights/(dx));
     [barheights, positions]=hist(Y2,10);
 
     dx=positions(2)-positions(1);
-
     bar(positions, barheights/(dx));
     [barheights, positions]=hist(Y3,10);
 
     dx=positions(2)-positions(1);
-
     bar(positions, barheights/(dx));
     [barheights, positions]=hist(Y4,10);
 
     dx=positions(2)-positions(1);
-
     bar(positions, barheights/(dx));
 
     %Normalization between 0 and 9
@@ -122,7 +117,8 @@ rng(470021907)
  
 %ANSWER:
 % Tested on one epoch or one MC repetition
-%One tailed hypothesis
+    
+    %One tailed hypothesis
     %Absolute value; cn−1 (0.05)=1-0.9878=0.0122
     %0.0122<0.05 
 %Conlusion: IT does NOT EXCEED 
@@ -149,7 +145,6 @@ rng(470021907)
 
     %P=0.9537
 
-%PART_2 OF QUESTION 2
 % b) Th�e quantity rej(훼)computed in part (a) was constructed from randomlydrawn samples,
 %so it is itself random. In fact, it is the average of 10,000 inde-pendent draws from the Bernoulli(푝)distribution, with푝equal to the prob-ability that the absolute value of the푡-statistic exceeds푐푛−1(훼)in absolutevalue.
 % Using the normal approximation to the binomial distribution, test thehypothesis that푝=훼. Can you reject this hypothesis at the 5% signi�cancelevel?
