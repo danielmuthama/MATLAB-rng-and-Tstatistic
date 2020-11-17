@@ -21,7 +21,8 @@ then put the STUDENTID as follows rng(123456789), run the section by pressing F5
 •	The program contains heavy data. You need to be patient and avoid unnecessary interruptions. 
 
 ###	NB: THE FILE MAY TAKE A WHILE; PLEASE ENSURE YOU ARE RUNNING ON HIGHER PROCESSING COMPUTER AND ALL OTHER PROGRAMS ARE CLOSED TO GIVE SPACE FOR THE FILE TO LOAD AND OUPUT DATA CORRECTLY AND FASTER
-rng(470021907)
+
+                                                        rng(470021907)
 
 (i) Generate 9 mutually independent normally distributed random variables, X1,  . . , X9, where the ith of these random variables has expected value μ equal to             zero, and variance a2i
  %equal to the ith digit of your Student ID number. Collect these random variables into a 9 × 1 random vector, which we will view as a sample.
