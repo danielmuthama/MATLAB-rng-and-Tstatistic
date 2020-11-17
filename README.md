@@ -24,8 +24,7 @@ Need to be keen while loading MATLAB files (the one with. mlx extension) in the 
 
                                                         rng(470021907)
 
-(i) Generate 9 mutually independent normally distributed random variables, X1,  . . , X9, where the ith of these random variables has expected value μ equal to             zero, and variance a2i
- %equal to the ith digit of your Student ID number. Collect these random variables into a 9 × 1 random vector, which we will view as a sample.
+##### (i) Generate 9 mutually independent normally distributed random variables, X1,  . . , X9, where the ith of these random variables has expected value μ equal to             zero, and variance a2i equal to the ith digit of your Student ID number. Collect these random variables into a 9 × 1 random vector, which we will view as a sample.
 
  %USE THE FOLLOWING SYNTAX TO GENERATE A RANDOM INTEGER
  %Y = randn(m,n) but we need to normalize to integer
@@ -100,19 +99,18 @@ Need to be keen while loading MATLAB files (the one with. mlx extension) in the 
     %Normalized version
     disp(number2int)
 
+##### (ii) Compute the t-statistic for testing the null hypothesis H0 : μ = 0.
 
-% (ii) Compute the t-statistic for testing the null hypothesis H0 : μ = 0.
 %t-statistic for testing the null hypothesis H0 : μ = 0
-
 %After a successfull 10000 monte carlo iteration
 
         h = ttest(Yall)
         [h,p]=ttest(Yall)
 
 
-%(iii) Record whether the absolute value of the t-statistic exceeds cn−1 (α).
+##### (iii) Record whether the absolute value of the t-statistic exceeds cn−1 (α).
 
-%NB:since the values are generated randomly the test results may differ
+###### %NB:since the values are generated randomly the test results may differ
 
 %My first test was successfull
  
@@ -133,7 +131,7 @@ Need to be keen while loading MATLAB files (the one with. mlx extension) in the 
 %Conlusion: IT does NOT EXCEED 
 
 
-% Compute the proportion of Monte Carlo repetitions in which the absolute value of the푡-statistic exceeded푐푛−1(훼). Call this proportion rej(a)
+##### Compute the proportion of Monte Carlo repetitions in which the absolute value of the푡-statistic exceeded푐푛−1(훼). Call this proportion rej(a)
 
     [h,p]=ttest(Y1)% monte carlo computation upto 10 repettiions
     [h,p]=ttest(Y2)% monte carlo computation upto 100 repettiions
@@ -146,10 +144,7 @@ Need to be keen while loading MATLAB files (the one with. mlx extension) in the 
 
     %P=0.9537
 
-% b) Th�e quantity rej(훼)computed in part (a) was constructed from randomlydrawn samples,
-%so it is itself random. In fact, it is the average of 10,000 inde-pendent draws from the Bernoulli(푝)distribution, with푝equal to the prob-ability that the absolute value of the푡-statistic exceeds푐푛−1(훼)in absolutevalue.
-% Using the normal approximation to the binomial distribution, test thehypothesis that푝=훼. Can you reject this hypothesis at the 5% signi�cancelevel?
-% What about the 1% signi�cance level?
+##### b) Th�e quantity rej(훼)computed in part (a) was constructed from randomlydrawn samples, so it is itself random. In fact, it is the average of 10,000 inde-pendent draws from the Bernoulli(푝)distribution, with푝equal to the prob-ability that the absolute value of the푡-statistic exceeds푐푛−1(훼)in absolutevalue. Using the normal approximation to the binomial distribution, test thehypothesis that푝=훼. Can you reject this hypothesis at the 5% signi�cancelevel? What about the 1% signi�cance level?
 
 %SOLUTION
 
