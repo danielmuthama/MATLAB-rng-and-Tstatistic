@@ -1,4 +1,4 @@
-### MATLAB-Generation-of-Normal-Random-Number-Variables-and-T--tests
+#### MATLAB-Generation-of-Normal-Random-Number-Variables-and-T-tests
 
 ##### REQUIREMENTS
     Matlab r2018a to r2020a
